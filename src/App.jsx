@@ -1,11 +1,15 @@
+import { useState } from "react"
 
 
 function App() {
- 
+ const [length, setLength] = useState(8);
+ const [numAllowed, setNumAllowed] = useState(false);
+ const [charAllowed, setCharAllowed] = useState(false);
+
 
   return (
     <>
-      <h1>Password Generator</h1>
+      <h1 className="text-4xl text-center text-white ">Password Generator</h1>
     </>
   )
 }
